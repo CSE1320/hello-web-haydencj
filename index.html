@@ -11,11 +11,8 @@
                 font-family: Nunito;
             }
             img {
-                position: absolute;
-                background: #579076;
-                width: 94px;
-                height: 103px;
-                margin-top: 7px; 
+                width: 100%;
+                height: 100%;
             }
             /* UTILITY */
             .cr {
@@ -31,25 +28,32 @@
                 padding: 0;  
             }
             .polaroid-card {
-                position: relative;
-                width: 100.912px;
-                height: 160.959px;
+                flex-direction: column;
+                align-items: center;
+                width: 101px;
+                height: 161px;
             }
             .polaroid{
                 position: relative;
                 background: white;
-                width: 100.912px;
-                height: 126.766px;
+                width: 101px;
+                height: 127px;
                 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            }
+            .mushroom {
+                width: 94px;
+                height: 103px;
+                margin-top: 7px; 
             }
             .warning{
                 position: absolute;
+                width: 20px;
+                height: 20px;
                 top: 0;
                 left: 0;
-                padding: 8px
+                padding: 8px;
             }
             .title{
-                position: absolute;
                 color: #203B5F;
                 text-align: center;
                 font-family: Nunito;
@@ -57,9 +61,8 @@
                 font-style: normal;
                 font-weight: 600;
                 line-height: normal;
-                margin-top: 15px;
                 margin: 0;
-                bottom: 0; 
+                margin-top: 8px;
                 width: max-content
             }
         </style>
@@ -69,10 +72,8 @@
             <li>
                 <div class="polaroid-card cr">
                     <div class="polaroid cr">
-                        <img alt="Death Cap Mushroom">
-                        <svg class="warning" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
-                            <path d="M1.67982 17H14.3202C15.6128 17 16.4185 15.6253 15.7722 14.5305L9.45205 3.82111C8.80576 2.7263 7.19424 2.7263 6.54795 3.82111L0.227771 14.5305C-0.418516 15.6253 0.387244 17 1.67982 17ZM8 11.2378C7.53837 11.2378 7.16067 10.8674 7.16067 10.4147V8.76834C7.16067 8.3156 7.53837 7.94517 8 7.94517C8.46163 7.94517 8.83933 8.3156 8.83933 8.76834V10.4147C8.83933 10.8674 8.46163 11.2378 8 11.2378ZM8.83933 14.5305H7.16067V12.8842H8.83933V14.5305Z" fill="#FF5050"/>
-                        </svg>
+                        <img class="mushroom" src="assets/deathcap.png" alt="Death Cap Mushroom">
+                        <img class="warning" src="assets/ic_round-warning.svg" alt="Warning Icon" fill="none">
                     </div>
                     <p class="title">Death Cap</p> 
                 </div>
@@ -80,7 +81,7 @@
             <li>
                 <div class="polaroid-card cr">
                     <div class="polaroid cr">
-                        <img alt="Paddy Straw Mushroom">
+                        <img class="mushroom" src="assets/paddystraw.png" alt="Paddy Straw Mushroom">
                     </div>
                     <p class="title">Paddy Straw</p> 
                 </div>
@@ -88,10 +89,9 @@
             <li>
                 <div class="polaroid-card cr">
                     <div class="polaroid cr">
-                        <img alt="Destroying Angel Mushroom">
-                        <svg class="warning" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
-                            <path d="M1.67982 17H14.3202C15.6128 17 16.4185 15.6253 15.7722 14.5305L9.45205 3.82111C8.80576 2.7263 7.19424 2.7263 6.54795 3.82111L0.227771 14.5305C-0.418516 15.6253 0.387244 17 1.67982 17ZM8 11.2378C7.53837 11.2378 7.16067 10.8674 7.16067 10.4147V8.76834C7.16067 8.3156 7.53837 7.94517 8 7.94517C8.46163 7.94517 8.83933 8.3156 8.83933 8.76834V10.4147C8.83933 10.8674 8.46163 11.2378 8 11.2378ZM8.83933 14.5305H7.16067V12.8842H8.83933V14.5305Z" fill="#FF5050"/>
-                        </svg>
+                        <img class="mushroom" src="assets/destroyingangel.png" alt="Destroying Angel Mushroom">
+                        <img class="warning" src="assets/ic_round-warning.svg" alt="Warning Icon" fill="none">
+
                     </div>
                     <p class="title">Destroying Angel</p> 
                 </div>
@@ -99,10 +99,8 @@
             <li>
                 <div class="polaroid-card cr">
                     <div class="polaroid cr">
-                        <img alt="False Death Cap Mushroom">
-                        <svg class="warning" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
-                            <path d="M1.67982 17H14.3202C15.6128 17 16.4185 15.6253 15.7722 14.5305L9.45205 3.82111C8.80576 2.7263 7.19424 2.7263 6.54795 3.82111L0.227771 14.5305C-0.418516 15.6253 0.387244 17 1.67982 17ZM8 11.2378C7.53837 11.2378 7.16067 10.8674 7.16067 10.4147V8.76834C7.16067 8.3156 7.53837 7.94517 8 7.94517C8.46163 7.94517 8.83933 8.3156 8.83933 8.76834V10.4147C8.83933 10.8674 8.46163 11.2378 8 11.2378ZM8.83933 14.5305H7.16067V12.8842H8.83933V14.5305Z" fill="#FF5050"/>
-                        </svg>
+                        <img class="mushroom" src="assets/falsedeathcap.png" alt="False Death Cap Mushroom">
+                        <img class="warning" src="assets/ic_round-warning.svg" alt="Warning Icon" fill="none">
                     </div>
                     <p class="title">False Death Cap</p> 
                 </div>
@@ -110,7 +108,7 @@
             <li>
                 <div class="polaroid-card cr">
                     <div class="polaroid cr">
-                        <img alt="Puff Ball Mushroom">
+                        <img class="mushroom" src="assets/puffball.png" alt="Puff Ball Mushroom">
                     </div>
                     <p class="title">Puff Ball</p> 
                 </div>
